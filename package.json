@@ -1,0 +1,24 @@
+{
+  "name": "koajs-error",
+  "version": "0.0.4",
+  "description": "koa,error,middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s249359986/koajs-error.git"
+  },
+  "keywords": [
+    "koa",
+    "error",
+    "middleware"
+  ],
+  "author": "7ke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s249359986/koajs-error/issues"
+  },
+  "homepage": "https://github.com/s249359986/koajs-error#readme"
+}
