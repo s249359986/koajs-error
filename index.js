@@ -31,9 +31,9 @@ module.exports = function getMiddleware(options) {
             if(options.type=="json")
             {
                 console.log(_this.status);
-                var tempCode = err.code || _this.status;
-                var tempStatus=_this.status||500;
-                _this.body ={"message":err.message,"code":tempCode,"status":tempStatus};// err.message;
+                var tempCode = err.code ||err.status|| _this.status||500;
+                var message=err.message||"内部服务器错误";
+                _this.body ={"message":message,"code":tempCode};// err.message;
             }
             else
             {
