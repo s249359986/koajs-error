@@ -27,10 +27,10 @@ module.exports = function getMiddleware(options) {
         try {
             yield next;
         } catch (err) {
-            console.log("onerror");
+            console.error(err);
             if(options.type=="json")
             {
-                console.log(_this.status);
+                console.log("系统状态码："+_this.status);
                 var tempCode = err.code ||err.status|| _this.status||500;
                 var message=err.message||"内部服务器错误";
                 _this.body ={"message":message,"code":tempCode};// err.message;
